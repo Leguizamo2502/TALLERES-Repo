@@ -1,0 +1,16 @@
+<h2>{{titulo}}</h2>
+
+<form (submit)="guardar()" [formGroup]="form">
+    <mat-form-field appearance="outline">
+        <mat-label>Title</mat-label>
+        <input [formControl]="form.controls.title" matInput />
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+        <mat-label>Body</mat-label>
+        <input [formControl]="form.controls.body" matInput />
+    </mat-form-field>
+    <div>
+        <button type="submit" mat-flat-button>Guardar Cambios</button>
+        <a mat-stroked-button routerLink="/apiJson">Cancelar</a>
+    </div>
+</form>

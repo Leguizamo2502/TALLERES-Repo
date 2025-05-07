@@ -1,0 +1,45 @@
+.inicio-container {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .titulo {
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .descripcion {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 2rem;
+  }
+  
+  .entidades-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .entidad-card {
+    background-color: #f3f3f3;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    text-align: left;
+  }
+  
+  .entidad-card h3 {
+    margin-top: 0;
+    color: #333;
+  }
+  
+  .entidad-card p {
+    color: #555;
+  }
+  
+  .pie {
+    margin-top: 3rem;
+    font-size: 0.9rem;
+    color: #999;
+  }
+  

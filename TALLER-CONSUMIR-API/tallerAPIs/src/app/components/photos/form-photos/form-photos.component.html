@@ -1,0 +1,20 @@
+<h2>{{titulo}}</h2>
+
+<form (submit)="guardar()" [formGroup]="form">
+    <mat-form-field appearance="outline">
+        <mat-label>Title</mat-label>
+        <input [formControl]="form.controls.title" matInput />
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+        <mat-label>Url</mat-label>
+        <input [formControl]="form.controls.url" matInput />
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+        <mat-label>Url de la Miniatura</mat-label>
+        <input [formControl]="form.controls.thumbnailUrl" matInput />
+    </mat-form-field>
+    <div>
+        <button type="submit" mat-flat-button>Guardar Cambios</button>
+        <a mat-stroked-button routerLink="/photos">Cancelar</a>
+    </div>
+</form>
